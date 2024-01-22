@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,12 +7,20 @@
     <title>Blackjack</title>
   </head>
   <body>
-    <h1 class="title">Blackjack</h1>
-    <div class="cards">
-    </div> 
-    <div class="buttons">
-      <button class="hit">Hit</button>
-      <button class="stay">Stay</button>
+    <div id="container">
+      <div id="player-hand">
+        <h2>Player's Hand</h2>
+        <div id="player-cards"></div>
+      </div>
+
+      <div id="dealer-hand">
+        <h2>Dealer's Hand</h2>
+        <div id="dealer-cards"></div>
+      </div>
+
+      <button id="deal-button">Deal</button>
+      <button id="hit-button">Hit</button>
+      <button id="stand-button">Stand</button>
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>
