@@ -1,4 +1,8 @@
-export { DOMSelectors }; 
+export { DOMSelectors };
 const DOMSelectors = {
-    cards: document.querySelector(".cards"),
+  playerCards: document.getElementById("player-cards"),
+  dealerCards: document.getElementById("dealer-cards"),
+  dealButton: document.getElementById("deal-button"),
+  hitButton: document.getElementById("hit-button"),
+  standButton: document.getElementById("stand-button"),
 };
