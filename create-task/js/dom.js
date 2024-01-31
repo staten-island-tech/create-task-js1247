@@ -5,4 +5,5 @@ const DOMSelectors = {
   dealButton: document.getElementById("deal-button"),
   hitButton: document.getElementById("hit-button"),
   standButton: document.getElementById("stand-button"),
+  playAgain: document.getElementById("play-again"),
 };
