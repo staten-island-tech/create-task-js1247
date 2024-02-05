@@ -9,6 +9,8 @@ function shuffleDeck(deck) {
 }
 
 let roundNumber = 1;
+let player1Score = 0;
+let player2Score = 0;
 let deckOfCards = [];
 
 function startGame() {
@@ -35,13 +37,21 @@ function playRound() {
 
   if (card1 > card2) {
     DOMSelectors.result.innerHTML = "Player 1 wins the round!";
+    player1Score++;
   } else if (card2 > card1) {
     DOMSelectors.result.innerHTML = "Player 2 wins the round!";
+    player2Score++;
   } else {
     DOMSelectors.result.innerHTML = "It's a tie!";
   }
 
   DOMSelectors.roundNumber.innerHTML = `Round ${roundNumber++}`;
+  updateScoreboard();
+}
+
+function updateScoreboard() {
+  DOMSelectors.player1Score.innerHTML = `Player 1 Score: ${player1Score}`;
+  DOMSelectors.player2Score.innerHTML = `Player 2 Score: ${player2Score}`;
 }
 
 DOMSelectors.play.addEventListener("click", playRound);
