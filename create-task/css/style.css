@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dfdfdf;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#container {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 50px;
+}
+
+#roundNumber {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#player1Container,
+#player2Container {
+  margin: 0 auto;
+}
+
+#player1,
+#player2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+#player1Number,
+#player2Number {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#player1Container {
+  color: #1457e9;
+}
+
+#player2Container {
+  color: #e20808;
+}
+
+#result {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+#play {
+  font-size: 32px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #45a848;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#play:hover {
+  background-color: #5ec763;
+}
