@@ -20,8 +20,8 @@ function startGame() {
     8, 9, 10, 11, 12, 13,
   ];
   shuffleDeck(deckOfCards);
-
   DOMSelectors.roundNumber.innerHTML = `Round ${roundNumber}`;
+  updateScoreboard();
 }
 
 function playRound() {
