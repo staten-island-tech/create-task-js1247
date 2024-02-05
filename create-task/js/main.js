@@ -21,7 +21,7 @@ function startGame() {
   ];
   shuffleDeck(deckOfCards);
   DOMSelectors.roundNumber.innerHTML = `Round ${roundNumber}`;
-  updateScoreboard();
+  scoreboard();
 }
 
 function playRound() {
@@ -46,10 +46,10 @@ function playRound() {
   }
 
   DOMSelectors.roundNumber.innerHTML = `Round ${roundNumber++}`;
-  updateScoreboard();
+  scoreboard();
 }
 
-function updateScoreboard() {
+function scoreboard() {
   DOMSelectors.player1Score.innerHTML = `Player 1 Score: ${player1Score}`;
   DOMSelectors.player2Score.innerHTML = `Player 2 Score: ${player2Score}`;
 }
