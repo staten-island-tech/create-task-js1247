@@ -1,9 +1,8 @@
 export { DOMSelectors };
 const DOMSelectors = {
-  playerCards: document.getElementById("player-cards"),
-  dealerCards: document.getElementById("dealer-cards"),
-  dealButton: document.getElementById("deal-button"),
-  hitButton: document.getElementById("hit-button"),
-  standButton: document.getElementById("stand-button"),
-  playAgain: document.getElementById("play-again"),
+  roundNumber: document.getElementById("roundNumber"),
+  player1Number: document.getElementById("player1Number"),
+  player2Number: document.getElementById("player2Number"),
+  result: document.getElementById("result"),
+  play: document.getElementById("play"),
 };

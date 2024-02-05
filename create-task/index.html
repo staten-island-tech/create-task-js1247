@@ -4,24 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blackjack</title>
+    <title>War Card Game</title>
   </head>
   <body>
+    <h1>War Card Game</h1>
     <div id="container">
-      <div id="player-hand">
-        <h2>Player's Hand</h2>
-        <div id="player-cards"></div>
+      <h1 id="roundNumber"></h1>
+      <div id="player1Container">
+        <h2 id="player1">Player 1:</h2>
+        <h3 id="player1Number"></h3>
       </div>
-
-      <div id="dealer-hand">
-        <h2>Dealer's Hand</h2>
-        <div id="dealer-cards"></div>
+      <div id="player2Container">
+        <h2 id="player2">Player 2:</h2>
+        <h3 id="player2Number"></h3>
       </div>
-
-      <button id="deal-button">Deal</button>
-      <button id="hit-button">Hit</button>
-      <button id="stand-button">Stand</button>
-      <button id="play-again">Play Again</button>
+      <h3 id="result"></h3>
+      <button id="play">Play Round</button>
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>
